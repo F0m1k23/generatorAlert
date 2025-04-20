@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Генератор алертов</h1>
+    </div>
+    <div class="wrapper">
+      <div class="block1">
+        <form action="#">
+          <div class="checkboxes">
+            <h3>Настройки Блока</h3>
+            <div class="checkboxBlock">
+              <input
+                type="checkbox"
+                class="checkbox checkboxStyle"
+                id="borederRadius"
+                name="borderRadius"
+                value="borderRadius"
+              />
+              <label for="borderRadius">Закругленные углы</label>
+            </div>
+            <div class="checkboxBlock">
+              <input
+                type="checkbox"
+                class="checkbox checkboxStyle"
+                id="shadow"
+                name="shadow"
+                value="shadow"
+              />
+              <label for="shadow">Тень Окна</label>
+            </div>
+
+            <div class="checkboxBlock">
+              <input
+                type="checkbox"
+                class="checkbox checkboxStyle"
+                id="textUper"
+                name="textUper"
+                value="textUper"
+              />
+              <label for="textUper">Текст в верхнем регистре</label>
+            </div>
+          </div>
+          <div data-type="stendartIcon" class="radioButtons">
+            <h3>Выберите тип логотипа</h3>
+            <div class="showLogos">
+              <input
+                checked
+                type="checkbox"
+                class="checkbox checkboxStyle"
+                id="showLogo"
+              />
+              <label for="showLogo">Показать логотип</label>
+            </div>
+
+            <div class="radioButton">
+              <input checked type="radio" class="typeLogo" id="success" name="typeLogo" value="success" />
+              <label for="success">✅ Success</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="warning" name="typeLogo" value="warning" />
+              <label for="warning">⚠️ Warning</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="error" name="typeLogo" value="error" />
+              <label for="error">❌ Error</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="dennied" name="typeLogo" value="dennied" />
+              <label for="dennied">🚫 Denied</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="info" name="typeLogo" value="info" />
+              <label for="info">ℹ️ Info</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="question" name="typeLogo" value="question" />
+              <label for="question">❓ Question</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="stop" name="typeLogo" value="stop" />
+              <label for="stop">🛑 Stop</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="fire" name="typeLogo" value="fire" />
+              <label for="fire">🔥 Fire</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="bug" name="typeLogo" value="bug" />
+              <label for="bug">🐞 Bug</label>
+            </div>
+            <div class="radioButton">
+              <input type="radio" class="typeLogo" id="light" name="typeLogo" value="light" />
+              <label for="light">💡 Light</label>
+            </div>
+            
+          </div>
+
+
+          <div class="text">
+            <h3>Текст заголовка</h3>
+            <input
+              type="text"
+              class="titleText"
+              name="titleText"
+              id="titleText"
+              placeholder="Ваш заголовок"
+            />
+            <h3>Размер заголовка</h3>
+            <input
+              type="range"
+              class="titleSize"
+              name="titleSize"
+              id="titleSize"
+              value="titleSize"
+              min="0"
+              max="10"
+              step="1"
+              value="5"
+            />
+          </div>
+          <div class="text">
+            <h3>Текст текста</h3>
+            <input
+              type="subtitleText"
+              class="subtitleText"
+              name="subtitleText"
+              id="subtitleText"
+              placeholder="Ваш текст"
+            />
+            <h3>Размер текста</h3>
+            <input
+              type="range"
+              class="textSize"
+              name="textSize"
+              id="textSize"
+              value="textSize"
+              min="0"
+              max="10"
+              step="1"
+              value="5"
+            />
+          </div>
+
+          
+        </form>
+        <button id="getHtml" class="btn">Сгенирировать HTML</button>
+      </div>
+      <div class="block2"></div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+  </body>
+</html>
